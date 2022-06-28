@@ -1,0 +1,66 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="employees.emp.controller.View1" displayBlock="true">
+    <Page id="page" title="{i18n>title}">
+    <content>
+
+<Table noDataText="Drop column list items here and columns in the area above" id="SalesList" growing="true" growingScrollToLoad="true" items="{path: '/EmployeeSet' , templateShareable:true }">
+<headerToolbar>
+    <OverflowToolbar id="otbSubheader">
+        <!-- <ToolbarSpacer/> -->
+        <SearchField ariaLabelledBy="text1" id="maxPrice" liveChange="onFilter">
+            <layoutData><OverflowToolbarLayoutData id="search" maxWidth="300px" shrinkable="true" priority="NeverOverflow"/></layoutData>
+        </SearchField>
+        <Button text="Create" type="Emphasized" press="onCreate" icon="sap-icon://create-entry-time" id="bCreate" activeIcon="sap-icon://create-entry-time"/>
+        <OverflowToolbarButton id="Sort" tooltip="Sort" type="Transparent" text="Sort" icon="sap-icon://sort" press="onSort"/>
+        <OverflowToolbarButton id="Group" tooltip="Group" type="Transparent" text="Group" icon="sap-icon://group-2" press="onGroup"/>
+    </OverflowToolbar>
+</headerToolbar> 
+    <items>
+        <ColumnListItem id="item0" type="Navigation" press="navToDetailsView">
+            <cells>
+                <Text text="{Id}" id="tId"/>
+            </cells>
+            <cells>
+                <Text text="{FirstName}" id="tFirstName"/>
+            </cells>
+            <cells>
+                <Text text="{LastName}" id="tLastName"/>
+            </cells>
+            <cells>
+                <Text text="{DOB}" id="tDOB"/>
+            </cells>
+            <cells>
+                <Text text="{Salary}" id="tSalary"/>
+            </cells>            
+        </ColumnListItem>
+    </items>
+    <columns>
+        <Column id="cId">
+            <header>
+                <Label text="Id" id="lVbeln" design="Bold"/>
+            </header>
+        </Column>
+        <Column id="cFirstName">
+            <header>
+                <Label text="First Name" id="lFirstName" design="Bold"/>
+            </header>
+        </Column>
+        <Column id="cLastName">
+            <header>
+                <Label text="Last Name" id="lLastName" design="Bold"/>
+            </header>
+        </Column>
+        <Column id="cDOB">
+            <header>
+                <Label text="DOB" id="lDOB" design="Bold"/>
+            </header>
+        </Column>
+        <Column id="cSalary">
+            <header>
+                <Label text="Salary" id="lSalary" design="Bold"/>
+            </header>
+        </Column>        
+    </columns>
+</Table>
+    </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,8 @@
+GET http://localhost:4004/sap/opu/odata/sap/employees/EmployeeSet
+
+#####
+
+POST  http://localhost:4004/sap/opu/odata/sap/employees/EmployeeSet
+Content-Type: application/json
+
+{"createdAt":"2022-06-25T05:29:04.626Z","createdBy":"anonymous","modifiedAt":"2022-06-25T05:29:04.626Z","modifiedBy":"anonymous","Id":12,"FirstName":"Rohit","LastName":"Sharma","Gender":true,"Salary":54554 }

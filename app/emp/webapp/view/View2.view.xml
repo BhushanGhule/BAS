@@ -1,0 +1,22 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="employees.emp.controller.View2" displayBlock="true">
+   <Page id="page" title="Create Employee">
+      <content>
+	<OverflowToolbar id="otb1">
+		<Label text="Create new employee"/>
+		<ToolbarSpacer/>
+		<Button text="Create" type="Emphasized" activeIcon="sap-icon://create" icon="sap-icon://create-entry-time" press="onCreate"/>
+	</OverflowToolbar>      
+         <sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" editable="true" layout="ResponsiveGridLayout" id="form0">
+            <sap.ui.layout.form:content>
+               <sap.ui.core:Title text="Create new employee" id="fCreate"/>
+               <Label text="Employee ID" id="lId"/> <Input width="300px" id="iID"/>
+               <Label text="First Name" id="lFirstName"/> <Input width="300px" id="iFirstName"/>
+               <Label text="Last Name" id="lLastName"/> <Input width="300px" id="iLastName"/>
+               <Label text="DOB" id="lDOB"/> <Input width="300px" id="iDOB" type="Date"/>
+               <Label text="Gender" id="lGender"/> <Input width="300px" id="iGender"/>
+               <Label text="Salary" id="lSalary"/> <Input width="300px" id="iSalary" type="Number"/>                                                            
+            </sap.ui.layout.form:content>
+         </sap.ui.layout.form:SimpleForm>
+      </content>
+   </Page>
+</mvc:View>
