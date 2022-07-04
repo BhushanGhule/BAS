@@ -9,7 +9,7 @@ sap.ui.define([
 
         return Controller.extend("employees.emp.controller.View1", {
             onInit: function () {
-
+                var oModel = this.getOwnerComponent.getModel();
             },
             onCreate: function () {
                 var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
