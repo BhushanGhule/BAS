@@ -1,6 +1,6 @@
 # Getting Started
 
-Welcome to your new project by Bhushan.
+Welcome to your new project by Bhushan Ghule.
 
 It contains these folders and files, following our recommended project layout:
 
